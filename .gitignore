@@ -1,0 +1,42 @@
+# Credentials — never commit
+.env
+*.env
+secrets.yaml
+credentials.json
+*.pem
+*.p12
+*.pfx
+
+# Claude Code internal files
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — raw and processed data should not be in git
+# (too large; use separate storage or cloud)
+data/raw/
+data/processed/
+
+# Metadata is small and useful to version
+!data/metadata/
+
+# Reports outputs
+reports/*/
+
+# OS
+.DS_Store
+Thumbs.db
